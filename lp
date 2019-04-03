@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+  <h1>LP</h1>
+  <script async type='text/javascript' src='//tag.hokichaio.cf/v1/j/ddde85d1-8a43-4248-a4a2-ac54716ab696'></script>
+  <a href="./cv.html">GOTO CV page</a>
+</body>
+</html>
+
