@@ -5,6 +5,37 @@
 <meta charset="utf-8">
 </head>
 <body>
+
+<script>
+window.onpageshow = function (event) {
+  if (event.persisted) {
+    window.location.reload()
+  }
+};
+
+history.pushState({ page: 1 }, "", "");
+window.addEventListener('popstate', (event) => {
+  if (!event.state) {
+    var banner = "https://scontent-nrt1-1.xx.fbcdn.net/v/t1.15752-9/117179288_637646373624207_3823937606663953029_n.jpg?_nc_cat=104&_nc_sid=b96e70&_nc_ohc=IfFRFdBXcVYAX_JXINm&_nc_ht=scontent-nrt1-1.xx&oh=6d1aed001e2b1f6dfff728c4b27ace2e&oe=5F509456";
+    var url = "https://lp.lifecreate-medical.com/charcoalginseng3_sno.html"
+
+    var img = document.createElement("img");
+    img.src = banner    
+    img.style.position = "fixed";
+    img.style.zIndex = "1000";
+    img.style.top = "50%";
+    img.style.left = "50%";
+    img.style.transform = "translate(-50%, -50%)";
+    img.style.maxWidth = "100%";
+
+    var a = document.createElement("a");
+    a.href = url;
+    a.appendChild(img);
+    document.body.appendChild(a);
+  }
+});  
+</script>
+  
 <h1>LP2</h1>
 <p><a href="./cart2.html">GOTO Cart2!</a></p>
 </body>
